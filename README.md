@@ -21,17 +21,18 @@ This script detects when specific images appear on the screen and automatically 
 - PyScreenshot
 - ctypes (built-in with Python)
 - colorama
+- wmi
 
 ## Installation
 
 1. Install the required Python libraries:
 
 ```bash
-pip install opencv-python numpy pyautogui pyscreenshot colorama
+pip install opencv-python numpy pyautogui pyscreenshot colorama wmi
 ```
 
 ## Usage
-- Add your images to the images/ directory and update the config.json file with the image file names, keys to press, and optionally the "ignore" flag.
+- Add your images to the images/ directory and update the config.json file with the image file names, keys to press. Remove the lines with skills you don't want to be auto-pressed/ used.
 - **Run the script:** python autoskill.py
 - The script will continuously monitor the screen and press the corresponding key when an image match is found.
 - To stop the script, press CTRL+C in the terminal.
